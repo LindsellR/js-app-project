@@ -1,0 +1,82 @@
+/* color pallette/ */
+:root {
+  --primary-color: #811e09;
+  --secondary-color: #f62d14;
+  --text-color-dark: #000;
+  --text-color-light: #e19720;
+  --button-color: #fad61d;
+  --padding-list: 20px;
+  --margin-list: 40px;
+}
+
+/* font-family: "gill-sans-nova", sans-serif;
+font-weight: 500;
+font-style: normal; 
+
+.dynapuff-<uniquifier> {
+  font-family: "DynaPuff", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*/
+
+/* styles for body */
+
+body {
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 24px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: auto;
+}
+
+h1{
+    font-family: 'DynaPuff', serif;
+    font-size: 60px;
+    text-align: center;
+    margin-top: var(--margin-list);
+    padding-top: var(--padding-list);
+}
+
+.page-header {
+    display: flex;
+    padding: 20px;
+    background-color: var(--primary-color);
+  }
+
+.page-header-item {
+    display: flex;
+    margin: auto;
+    width: 500px;
+  }
+  
+.box {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--margin-list);
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 20px;
+    background-color: var(--button-color);
+    color: var(--primary-color);
+    width: 250px;
+    height: 250px; 
+    border: 10px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 40px 20px 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.list-item {
+    display:block;
+    font-family: "DynaPuff";
+    font-size: 40px;
+    font-weight: 600;
+}
