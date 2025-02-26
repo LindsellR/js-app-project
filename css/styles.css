@@ -54,6 +54,17 @@ h1{
     width: 500px;
   }
   
+.pokeButton{
+    display: flex;
+    margin: 20px auto;
+    background-color: var(--button-color);
+    color: var(--primary-color);
+    width: 250px;
+    height: auto; 
+    font-family: "DynaPuff";
+    font-size: 32px;
+}  
+/*
 .box {
     display: flex;
     justify-content: center;
@@ -79,4 +90,4 @@ h1{
     font-family: "DynaPuff";
     font-size: 40px;
     font-weight: 600;
-}
+} */

@@ -36,11 +36,17 @@ let pokemonRepository = (function () {
 // }
 
 pokemonRepository.getAll().forEach(function (pokemon) {
-  //extracts certain data and prints to DOM. html tags added for styling
-  if (pokemon.height > 5) {
-    document.write('<div class="card"><span class="list-item">' + pokemon.name + '</span> Height: ' + pokemon.height + '. <br> That\'s a big Pokemon!</div>');
-  } else {
-    document.write('<div class="card"><span class="list-item">' + pokemon.name + '</span> Height: ' + pokemon.height + '</div>');
-  }
-});
+  let listContainer = document.querySelector('.pokemon-list');
+  let listItem = document.createElement('li');
+  let button = document.createElement('button');
+  button.innerText = pokemon.name;
+  button.classList.add('pokeButton');
+  listContainer.appendChild(button);
 
+  //extracts certain data and prints to DOM. html tags added for styling
+//  if (pokemon.height > 5) {
+//  document.write('<div class="card"><span class="list-item">' + pokemon.name + '</span> Height: ' + pokemon.height + '. <br> That\'s a big Pokemon!</div>');
+// } else {
+//  document.write('<div class="card"><span class="list-item">' + pokemon.name + '</span> Height: ' + pokemon.height + '</div>');
+// }
+});
