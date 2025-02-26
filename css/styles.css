@@ -9,7 +9,8 @@
   --margin-list: 40px;
 }
 
-/* font-family: "gill-sans-nova", sans-serif;
+/* font-family: 
+"gill-sans-nova", sans-serif;
 font-weight: 500;
 font-style: normal; 
 
@@ -24,7 +25,6 @@ font-style: normal;
 */
 
 /* styles for body */
-
 body {
     font-family: 'Gill Sans', sans-serif;
     font-size: 24px;
@@ -42,6 +42,7 @@ h1{
     padding-top: var(--padding-list);
 }
 
+/* Header Styles */
 .page-header {
     display: flex;
     padding: 20px;
@@ -51,20 +52,31 @@ h1{
 .page-header-item {
     display: flex;
     margin: auto;
-    width: 500px;
+    max-width: 50%;
+    height: auto;
   }
   
 .pokeButton{
     display: flex;
-    margin: 20px auto;
+    margin: 30px auto;
     background-color: var(--button-color);
     color: var(--primary-color);
-    width: 250px;
+    width: 320px;
     height: auto; 
     font-family: "DynaPuff";
     font-size: 32px;
-}  
-/*
+    justify-content: center;
+    transition-duration: 0.4s;
+}
+/* style for button hover */
+.pokeButton:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--button-color);
+}
+
+/* SUPERCEDED STYLING
 .box {
     display: flex;
     justify-content: center;
