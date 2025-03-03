@@ -7,3 +7,5 @@ Pokedex - A small web application created with **HTML, CSS, and Javascript** tha
 ##Project Dependencies
 
 ##Project API
+
+The project API used is the PokeAPI (https://pokeapi.co/)
