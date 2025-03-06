@@ -28,13 +28,13 @@ font-style: normal;
 body {
     font-family: 'Gill Sans', sans-serif;
     font-size: 24px;
-    display: block;
+    /* display: block;
     width: 100%;
     margin: 0 auto;
-    text-align: auto;
-}
-
-h1{
+    text-align: auto; */
+} 
+/* Page title */
+body h1{
     font-family: 'DynaPuff', serif;
     font-size: 60px;
     text-align: center;
@@ -42,32 +42,19 @@ h1{
     padding-top: var(--padding-list);
 }
 
-/* Header Styles */
-.page-header {
-    display: flex;
-    padding: 20px;
-    background-color: var(--primary-color);
-  }
-
-.page-header-item {
-    display: flex;
-    margin: auto;
-    max-width: 50%;
-    height: auto;
-  }
-  .pokemon-list {
+/* Display for pokemon list */
+.pokemon-list {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content: center
 }
-  
+/* pokemon button styling */
 .btn{
-    display: flex;
-    margin: 20px;
+    margin: 20px; 
     background-color: var(--button-color);
     color: var(--primary-color);
-    width: 400px;
+    width: 320px;
     height: auto; 
     font-family: "DynaPuff";
     font-size: 32px;
@@ -75,7 +62,7 @@ h1{
     transition-duration: 0.4s;
 }
 /* style for button hover */
-.pokeButton:hover{
+.btn:hover{
     transform: scale(1.05);
     cursor: pointer;
     background-color: var(--primary-color);
@@ -83,48 +70,7 @@ h1{
 }
 
 /* Modal styling */
-html, 
-body {
-  font-family: "gill-sans-nova", sans-serif;
-}
-#modal-container {
-    display: none;
-}
-#modal-container.is-visible {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  
-  /* to show it above other content */
-  z-index: 999; 
-  
-  /* to allow scrolling if the screen is not high enough*/
-  overflow: auto; 
-  
-  /* centering the modal */
-  display: grid;
-  text-align: center;
-}
-
-/* styling and animation for the modal */
-.modal {
-  /* margin: auto;
-  box-sizing: border-box;
-  border-radius: 10px;
-  border-style: solid;
-  border-width: medium;
-  border-color: var(--secondary-color);
-  background-color: var(--primary-color);
-  color: var(--button-color);
-  padding: 15px;
-  text-align: left; */
+ .modal{
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -134,64 +80,11 @@ body {
   to {transform:scale(1)}
 }
 
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: var(--button-color);
-  text-decoration: underline;
+.modal-content {
+  text-align: center
+} 
+.modal-content h2{
+  font-family: "DynaPuff", serif;
+  font-size: 48px;
 }
 
-.modal h1 {
-  margin-top: 0;
-  font-family: "gill-sans-nova", sans-serif;
-}
-
-.modal p {
-  margin-bottom: 0;
-}
-
-
-
-/* media queries for responiveness */
-@media (max-width: 920px){
-    h1{
-   font-size: 30px;
-    };
-}
-@media (max-width: 600px){
-    .pokeButton{
-    display: flex;
-    margin: 10px;
-    width: 320px;
-    };
-}
-
-/* SUPERCEDED STYLING
-.box {
-    display: flex;
-    justify-content: center;
-    margin-top: var(--margin-list);
-    flex-wrap: wrap;
-}
-.card {
-    margin: 20px;
-    background-color: var(--button-color);
-    color: var(--primary-color);
-    width: 250px;
-    height: 250px; 
-    border: 10px solid var(--primary-color);
-    border-radius: 10px;
-    padding: var(--padding-list);
-    text-align: center;
-    line-height: 1.5;
-    align-content: center;
-}
-
-.list-item {
-    display:block;
-    font-family: "DynaPuff";
-    font-size: 40px;
-    font-weight: 600;
-} */

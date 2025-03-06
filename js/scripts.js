@@ -58,18 +58,16 @@ let pokemonRepository = (function () {
 
   // Function to add list item button
   function addListItem(pokemon) {
-        let listContainer = document.querySelector('.list-group');
-        let listItem = document.createElement('li');
-        listItem.classList.add('list-group-item');        
-        let button = document.createElement('button');
-        button.innerText = pokemon.name;
-        button.classList.add('btn', 'btn-primary');
-        listItem.appendChild(button);
-        listContainer.appendChild(listItem);
+      let listContainer = $('.list-group');
+      let listItem = $('<li>').addClass('list-group-item');      
+      let button = $('<button>').text(pokemon.name).addClass('btn btn-primary');
+      listItem.append(button);
+      listContainer.append(listItem);
     
-    
-        button.addEventListener('click', () => showDetails(pokemon));
-      }
+        button.on('click', function() {
+          showDetails(pokemon);
+      })
+    }
     
       function showDetails(pokemon) {
         loadDetails(pokemon).then(function () {
@@ -97,7 +95,7 @@ let pokemonRepository = (function () {
       let abilities = item.abilities.map(ability => ability.ability.name).join(', ');
       $('#pokemon-abilities').text("Abilities: " + abilities);
     
-     $('#modal-container').modal('show')
+      $('#modal-container').modal('show')
     
       }
     
@@ -131,83 +129,3 @@ let pokemonRepository = (function () {
         pokemonRepository.addListItem(pokemon);
       });
     });
-
-
-
-
-// Add modal content
-    // let pokemonName = document.createElement('h1');
-    // pokemonName.innerText = title;
-
-    // let pokemonHeight = document.createElement('p');
-    // pokemonHeight.innerText = text;
-
-
-    // let pokemonImage = document.createElement('img');
-    // pokemonImage.setAttribute('src', img);
-    // pokemonImage.setAttribute('width', '100%');
-    // pokemonImage.setAttribute('height', '100%');
-
-    // modal.appendChild(closeButtonElement);
-    // modal.appendChild(pokemonName);
-    // modal.appendChild(pokemonHeight);
-    // modal.appendChild(pokemonImage);
-    // modalContainer.appendChild(modal);
-
-
-// // Load data - adListItem loaded last.
-// pokemonRepository.loadList().then(function(){
-//   pokemonRepository.getAll().forEach(function(pokemon){
-//     pokemonRepository.addListItem(pokemon);
-//   });
-// })
-  
-// *SUPRECEDED CODE!
-//   // Function to add pokemon items if consitions are met!!
-//     function add(pokemon) {
-//      if (pokemon && typeof pokemon === 'object' && 'name' in pokemon && 'height' in pokemon && 'type' in pokemon)
-//     {
-//       pokemonList.push(pokemon);
-//      } else {
-//        console.log('Invalid input: $Json.stringify(pokemon) is not a valid pokemon');
-//      }
-//    }
-  
-//   function getAll() {
-//     return pokemonList;
-//   }
-
-//   // to make pokemon list accessible outside of function!!
-//   return {
-//     add: add,
-//     getAll: getAll,
-//     addListItem: addListItem,
-//   };
-
-  
-// })();
-// //adding pokemon to list if conditions are met!!
-// pokemonRepository.add({ name: "Pikachu", height: 0.3, type: ["electric"] });
-
-// //forEach loop over pokemon array!!
-// pokemonRepository.getAll().forEach(function (pokemon) {
-//   pokemonRepository.addListItem(pokemon)
-// });
-
-
-// //loops through pokemonList variable
-// for (let i = 0; i < pokemonList.length; i++) {
-//   //extracts certain data and prints to DOM. html tags added for styling
-//   if (pokemonList[i].height > 5) {
-//     document.write('<div class="card"><span class="list-item">' + pokemonList[i].name + '</span> Height: ' + pokemonList[i].height + '. <br> That\'s a big Pokemon!</div>');
-//   } else {
-//     document.write('<div class="card"><span class="list-item">' + pokemonList[i].name + '</span> Height: ' + pokemonList[i].height + '</div>');
-//   }
-// }
-
-  //extracts certain data and prints to DOM. html tags added for styling
-//  if (pokemon.height > 5) {
-//  document.write('<div class="card"><span class="list-item">' + pokemon.name + '</span> Height: ' + pokemon.height + '. <br> That\'s a big Pokemon!</div>');
-// } else {
-//  document.write('<div class="card"><span class="list-item">' + pokemon.name + '</span> Height: ' + pokemon.height + '</div>');
-
