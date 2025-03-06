@@ -25,6 +25,8 @@ Once the app is loaded in your browser you will see the pokemon names in a list.
 
 
 ##Project Dependencies
+* jQuery
+* bootstrap
 
 ##Project API
 
