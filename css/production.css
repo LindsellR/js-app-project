@@ -1,13 +1,4 @@
 /* color pallette/ */
-:root {
-  --primary-color: #811e09;
-  --secondary-color: #f62d14;
-  --text-color-dark: #000;
-  --text-color-light: #e19720;
-  --button-color: #fad61d;
-  --padding-list: 20px;
-  --margin-list: 40px;
-}
 
 /* font-family: 
 "gill-sans-nova", sans-serif;
@@ -38,8 +29,8 @@ body h1{
     font-family: 'DynaPuff', serif;
     font-size: 60px;
     text-align: center;
-    margin-top: var(--margin-list);
-    padding-top: var(--padding-list);
+    margin-top: 40px;
+    padding-top: 20px;
 }
 
 /* Display for pokemon list */
@@ -52,8 +43,8 @@ body h1{
 /* pokemon button styling */
 .btn{
     margin: 20px; 
-    background-color: var(--button-color);
-    color: var(--primary-color);
+    background-color: #fad61d;
+    color: #811e09;
     width: 320px;
     height: auto; 
     font-family: "DynaPuff";
@@ -65,8 +56,8 @@ body h1{
 .btn:hover{
     transform: scale(1.05);
     cursor: pointer;
-    background-color: var(--primary-color);
-    color: var(--button-color);
+    background-color: #811e09;
+    color: #fad61d;
 }
 
 /* Modal styling */
@@ -87,4 +78,3 @@ body h1{
   font-family: "DynaPuff", serif;
   font-size: 48px;
 }
-

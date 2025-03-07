@@ -58,13 +58,13 @@ let pokemonRepository = (function () {
 
   // Function to add list item button
   function addListItem(pokemon) {
-      let listContainer = $('.list-group');
-      let listItem = $('<li>').addClass('list-group-item');      
-      let button = $('<button>').text(pokemon.name).addClass('btn btn-primary');
-      listItem.append(button);
-      listContainer.append(listItem);
+      let $listContainer = $('.list-group');
+      let $listItem = $('<li>').addClass('list-group-item');      
+      let $button = $('<button>').text(pokemon.name).addClass('btn btn-primary');
+      $listItem.append($button);
+      $listContainer.append($listItem);
     
-        button.on('click', function() {
+        $button.on('click', function() {
           showDetails(pokemon);
       })
     }
@@ -91,7 +91,6 @@ let pokemonRepository = (function () {
       let types = item.types.map(type => type.type.name).join(', ');
       $('#pokemon-types').text("Types: " + types);
     
-      
       let abilities = item.abilities.map(ability => ability.ability.name).join(', ');
       $('#pokemon-abilities').text("Abilities: " + abilities);
     

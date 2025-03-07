@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/hzg7vwd.css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <header class="sticky-top">
-        <nav class="navbar  navbar-expand-lg navbar-dark bg-success">
-            <a class="navbar-brand"><img class="img-fluid" src="img/pokedex-logo-smallest.png" width= "400"
+        <nav class="navbar  navbar-expand-lg navbar-light bg-success">
+            <a class="navbar-brand"><img class="img-fluid" src="img/Pokedex-no-bg.png" width= "400"
                    alt="logo featuring the word pokedex in the style of pokemon"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,11 +29,11 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">About</a>
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-label="About the app owner" href="#">About</a>
                     </li>
                 </ul>
             </div>
@@ -49,7 +49,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content bg-success">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="pokemonModalLabel">Pokemon Information</h5>
+                    <h2 class="modal-title" id="pokemonModalLabel">Pokemon Information</h2>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">X</span>
                     </button>
@@ -82,6 +82,7 @@
         <script src="js/promise-polyfill.js"></script>
         <script src="js/fetch-polyfill.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/tota11y.min.js"></script>
     </div>
 </body>
 
