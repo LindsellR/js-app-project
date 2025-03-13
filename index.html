@@ -21,9 +21,10 @@
 <body>
     <header class="sticky-top">
         <nav class="navbar  navbar-expand-lg navbar-light bg-success">
-            <a class="navbar-brand"><img class="img-fluid" src="img/Pokedex-no-bg.png" width="400"
+            <a class="navbar-brand  mx-auto"><img class="img-fluid" src="img/Pokedex-no-bg.png" width="400"
                     alt="logo featuring the word pokedex in the style of pokemon"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,7 +37,7 @@
                         <a class="nav-link active" aria-label="About the app owner" href="#">About</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </nav>
     </header>
     <h1>Pokemon List</h1>
@@ -44,28 +45,27 @@
         <!--pokemon list added here-->
     </ul>
     <!-- Modal -->
-    <div class="modal fade" id="modal-container" tabindex="-1" role="dialog" aria-labelledby="pokemonModalLabel"
+    <div class="modal fade " id="modal-container" tabindex="-1" role="dialog" aria-labelledby="pokemonModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content bg-success">
+            <div class="modal-content bg-success" style=" max-height: 80vh;">
                 <div class="modal-header">
                     <h2 class="modal-title" id="pokemonModalLabel">Pokemon Information</h2>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">X</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style ="overflow-y: auto;">
                     <h2 id="pokemon-name">''</h2>
-                    <img id="pokemon-image-front" style="width: 50%;" alt="Pokemon Image">
-                    <img id="pokemon-image-back" style="width: 50%;" alt="Pokemon Image">
+                    <img id="pokemon-image-front" style="width: 70%;" alt="Pokemon Image">
                     <p id="pokemon-height"></p>
                     <p id="pokemon-weight"></p>
                     <p id="pokemon-types"></p>
                     <p id="pokemon-abilities"></p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save</button> -->
                 </div>
             </div>
         </div>

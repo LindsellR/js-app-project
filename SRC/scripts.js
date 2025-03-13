@@ -45,7 +45,6 @@ let pokemonRepository = (function () {
       //add details to the pokemon
       .then(function (details) {
         item.imageUrlFront = details.sprites.front_default;
-        item.imageUrlBack = details.sprites.back_default;
         item.height = details.height;
         item.weight = details.weight;
         item.types = details.types;
@@ -81,8 +80,6 @@ let pokemonRepository = (function () {
     $('#pokemon-name').text(item.name);
 
     $('#pokemon-image-front').attr("src", item.imageUrlFront);
-
-    $('#pokemon-image-back').attr("src", item.imageUrlBack);
 
     $('#pokemon-height').text( "Height : " + item.height);
 
