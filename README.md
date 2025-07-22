@@ -1,12 +1,12 @@
-# 🎮 Pokémon Pokédex
+# Pokémon Pokédex
 
 A responsive web app built using vanilla JavaScript and the [PokéAPI](https://pokeapi.co), allowing users to browse and explore Pokémon with ease.
 
-> ⚡ [Live Demo](#) *(optional—add your URL here if deployed)*
+[Live Demo](https://lindsellr.github.io/js-app-project/)
 
 ---
 
-## 🎯 Features
+## Features
 
 - **Browse** a list of Pokémon with images and names  
 - Click on a Pokémon to **view detailed info**: abilities, types, stats, etc.  
@@ -15,7 +15,7 @@ A responsive web app built using vanilla JavaScript and the [PokéAPI](https://p
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
 - Vanilla JavaScript (ES6+)
 - HTML5 & CSS3 (Flexbox, Grid)
@@ -26,7 +26,7 @@ A responsive web app built using vanilla JavaScript and the [PokéAPI](https://p
 
 ---
 
-## 🛠️ Usage (for Developers)
+## Usage (for Developers)
 
 1. **Clone the repo**
 
