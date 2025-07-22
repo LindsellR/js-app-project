@@ -1,36 +1,47 @@
-## Pokedex - Pokemon List App
+# 🎮 Pokémon Pokédex
 
-Welcome to my simple web application made with **HTML, CSS, and Javascript** that fetches information about Pokemon, accessing dat from the **PokeAPI.** The Pokedex app allows users to view a list of Pokemon and access details about each one, such as images, abilities and more.
+A responsive web app built using vanilla JavaScript and the [PokéAPI](https://pokeapi.co), allowing users to browse and explore Pokémon with ease.
 
-##Running The App
-Here are the steps to run the project locally:
+> ⚡ [Live Demo](#) *(optional—add your URL here if deployed)*
 
-1. Clone the repository to your local machine
+---
 
-2. Navigate to the project directory
-cd js-app-project
+## 🎯 Features
 
-3. Open the index.html file in your browser to start the application
+- **Browse** a list of Pokémon with images and names  
+- Click on a Pokémon to **view detailed info**: abilities, types, stats, etc.  
+- Built with responsive design for mobile and desktop displays  
+- Powered by PokéAPI—real-time data fetch
 
-## Using The App.
+---
 
-Once the app is loaded in your browser you will see the pokemon names in a list.
+## 🧩 Tech Stack
 
-* Click on any pokemon to open a modal 
+- Vanilla JavaScript (ES6+)
+- HTML5 & CSS3 (Flexbox, Grid)
+- PokéAPI for data
+- Lightweight architecture—no frameworks
+- jQuery - for DOM manipulation
+- Bootstrap - for UI components (via CDN)
 
-* The modal displays an image and some details about the pokemon.
+---
 
-* You can close the modal by clicking the "Close " button or clicking anywhere outside the modal, or by using the escape key on your keyboard.
+## 🛠️ Usage (for Developers)
+
+1. **Clone the repo**
 
 
+   git clone https://github.com/LindsellR/js-app-project.git
+   cd js-app-project
 
-## Technologies Used
+2. **Run it locally**
+Either:
+npm install -g http-server
+http-server .
 
-- **HTML5** - for the structure of the app
-- **CSS3** - for styling the app
-- **JavaScript (ES6+)** - for handling interactivity
-- **jQuery** - for DOM manipulation
-- **Bootstrap** - for UI components (via CDN)
+Or simply double-click index.html to open it in your browser.
+
+4. Visit http://localhost:8080 (or your live URL) to explore the Pokédex.
 
 
 ## Project API

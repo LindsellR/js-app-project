@@ -1,7 +1,7 @@
 .DS_Store
 css/poke.production.css
 .vscode/settings.json
-node_modules
+node_modules/
 
 
 
