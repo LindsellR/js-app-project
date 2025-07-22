@@ -26,10 +26,9 @@ A responsive web app built using vanilla JavaScript and the [PokéAPI](https://p
 
 ---
 
-## Usage (for Developers)
+## Usage
 
 1. **Clone the repo**
-
 
    git clone https://github.com/LindsellR/js-app-project.git
    cd js-app-project
